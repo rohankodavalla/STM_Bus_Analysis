@@ -1,21 +1,23 @@
 # STM_Bus_Analysis
 Diving into Montreal’s bus data to identify peak usage zones and recommend rebalancing strategies.
 
-
 📝 Summary of the Code
-1️⃣ Objective & Purpose
-This code aims to analyze Montreal bus transit data to understand spatial demand patterns and temporal demand trends during peak hours, specifically the weekday morning (AM) and evening (PM) peaks. It does so by processing GTFS (General Transit Feed Specification) data, which is commonly used for public transportation analysis. The final result is a spatial visualization of the bus demand hotspots and a temporal distribution of bus departures during peak hours.
 
-2️⃣ How It Works
+**1️⃣ Objective & Purpose**
+
+This code aims to analyze Montreal bus transit data to understand spatial demand patterns and temporal demand trends during peak hours, specifically the weekday morning (AM) and evening (PM) peaks. It does so by processing GTFS (General Transit Feed Specification) data, which is commonly used for public transportation analysis. The final result is a spatial visualization of the bus demand hotspots and a temporal distribution of bus departures during peak hours.
+-----------------------------------------------------------------------------------------------------------------------------------------
+**2️⃣ How It Works**
+
 The process unfolds in several key steps:
 
 Step 1: Data Collection
-Data Source:
-The data is fetched from the Montreal transit system's GTFS feed, available at the following URL:
-Montreal GTFS Data.
-
-Downloading & Extracting the ZIP File:
-The code downloads the GTFS ZIP file and extracts the following CSV files:
+      Data Source:
+      The data is fetched from the Montreal transit system's GTFS feed, available at the following URL:
+      Montreal GTFS Data.
+      
+      Downloading & Extracting the ZIP File:
+        - The code downloads the GTFS ZIP file and extracts the following CSV files:
 
 stops.txt: Information about bus stops (ID, name, latitude, longitude, etc.).
 stop_times.txt: Details about bus stop times for each bus trip (arrival/departure times, stop sequences).
